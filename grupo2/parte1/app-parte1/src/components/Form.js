@@ -17,6 +17,7 @@ function Form() {
       <FormControl>
         <h2>GitHub Characters</h2>
         <input
+          placeholder="Digit your character name"
           value={ name }
           type="text"
           onChange={ handleChange }

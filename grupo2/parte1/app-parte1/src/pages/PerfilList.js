@@ -13,7 +13,6 @@ function PerfilList() {
   const [limit, setLimit] = useState(5);
   const url = 'https://api.github.com/users';
 
-
   const fetchPerfil = async () => {
     dispatch(toggleLoad(true));
     try {

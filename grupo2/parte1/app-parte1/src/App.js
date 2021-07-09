@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import './App.css';
-// import Perfil from './pages/Perfil';
+import PerfilDetails from './pages/PerfilDetails';
 import Error from './pages/Error';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={ Home } />
-        {/* <Route path="/users/:name" component={ Perfil } /> */}
+        <Route path="/users/:name" component={ PerfilDetails } />
         <Route path="*" component={ Error } />
       </Switch>
       

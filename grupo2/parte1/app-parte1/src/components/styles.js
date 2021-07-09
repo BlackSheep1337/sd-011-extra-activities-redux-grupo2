@@ -42,6 +42,12 @@ export const FormControl = styled.form`
     font-size: 2rem;
     color: green;
     font-weight: 900;
+    ::placeholder {
+      color: green;
+      font-size: 1.5rem;
+      opacity: 0.4;
+      padding-left: 15px;
+    }
     &:focus {
       outline: none;
     }
