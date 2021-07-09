@@ -16,7 +16,6 @@ export const Header = styled.div`
 export const WrapperForm = styled.section`
   display: flex;
   width: 100vw;
-  position: absolute;
   justify-content: center;
   margin-top: 4rem;
 `;

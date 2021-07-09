@@ -1,10 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { PerfilCard } from './styles';
 
-function Perfil() {
+function Perfil({ login, avatar_url  }) {
   return (
-    <div>
-      <h1>Single Perfil</h1>
-    </div>
+    <PerfilCard>
+      <img src={ avatar_url } alt={ login } />
+      <div>
+        <h3>GitHub Character: { login }</h3>
+        <Link to={`/users/${ login }`}>
+          <span className="btn btn-primary">More Info</span>
+        </Link>
+      </div>
+    </PerfilCard>
   )
 }
 
